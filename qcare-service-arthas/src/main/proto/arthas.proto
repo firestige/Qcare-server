@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "xyz.firestige.qcare.service.arthas";
+option java_outer_classname = "ArthasGrpcProto";
+
+package arthas;
+
+service ArthasGrpc {
+  rpc ExecuteCommand (ExecuteCommandRequest) returns (ExecuteCommandResponse) {}
+}
