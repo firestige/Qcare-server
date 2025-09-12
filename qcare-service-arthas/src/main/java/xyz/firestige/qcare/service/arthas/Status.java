@@ -1,5 +1,5 @@
 package xyz.firestige.qcare.service.arthas;
 
-public interface ArthasService {
-    
+public class Status {
+    private
 }

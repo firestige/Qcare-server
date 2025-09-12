@@ -1,7 +1,3 @@
-
-include("qcare-api")
-include("qcare-service-arthas")
-
 pluginManagement {
     val quarkusPluginVersion: String by settings
     val quarkusPluginId: String by settings
@@ -16,3 +12,7 @@ pluginManagement {
 }
 
 rootProject.name = "qcare-server"
+
+include("qcare-api")
+include("qcare-proto")
+include("qcare-service-arthas")
