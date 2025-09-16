@@ -42,3 +42,12 @@ tasks.withType<JavaCompile> {
     options.encoding = "UTF-8"
     options.compilerArgs.add("-parameters")
 }
+
+sourceSets{
+    main {
+        java {
+            srcDirs("src/main/java")
+            srcDirs("build/classes/java/quarkus-generated-sources/grpc")
+        }
+    }
+}
